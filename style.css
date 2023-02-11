@@ -1,0 +1,187 @@
+body, html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+}
+
+body {
+	margin: 0px;
+	background-color: black;
+}
+
+.year-gallery .img-class {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 5vh;
+	padding-bottom: 20vh;
+}
+
+@media screen and (max-width: 900px) {
+	.year-gallery .img-class {
+		margin-left: 6vw;
+	}
+}
+
+.year-gallery .img-class img {
+	width: 80vmin;
+	border-radius: 0.5vh;
+}
+
+.picture-year {
+	position: fixed;
+	font-size: 2.5vh;
+	left: 0px;
+	top: calc(50% - 2.5vw);
+	z-index: -5;
+	margin: 0px;
+	max-width: 15vw;
+	text-align: center;
+	font-family: 'B612 Mono', monospace;
+}
+
+.center-slide {
+	min-height: 96vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	filter: blur(0.2vh) brightness(0.4);
+
+	z-index: -1;
+}
+
+.background-black {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: black;
+	z-index: -2;
+}
+
+.start-slide-container {
+	max-width: 80vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.back-color-dark-gray {
+	background-color: rgb(31, 31, 31);
+	border-radius: 2vh;
+}
+
+.people-slide-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	gap: 0.5rem;
+}
+
+.person-profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(49, 49, 49);
+	padding: 2vh;
+	border-radius: 1vh;
+	width: 12.5vh;
+	cursor: pointer;
+	transition: opacity 200ms;
+}
+
+.person-profile:hover {
+	opacity: 0.75;
+}
+
+.person-profile img {
+	height: 20vh;
+	border-radius: 1vh;
+}
+
+.part-title {
+	text-align: center;
+	margin: 5vh;
+	top: 1vh;
+}
+
+.no-margin {
+	margin: 0px;
+}
+
+.bckgimg1 {
+	background-image: url("img/image_main.jpg");
+}
+
+h1 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 8vh;
+}
+
+h2 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3vh;
+	margin: 0px;
+	margin-top: 0.5vh;
+}
+
+h3 {
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vh;
+	margin: 0px;
+	margin-top: 0.5vh;
+}
+
+p {
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	font-size: 3vh;
+	text-align: justify;
+}
+
+a {
+	cursor: default;
+}
+
+button {
+	border: none;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	background-color: rgb(44, 44, 44);
+	color: white;
+	font-size: 2.5vh;
+	padding: 2vh;
+	margin: 1vh;
+	border-radius: 2vh;
+	transition: background 200ms;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(26, 26, 26);
+}
